@@ -337,7 +337,131 @@ footer p + p {
         right: -10px;
         font-size: 180px;
     }
+/* =====================================
+   ABERTURA CINEMATOGRÁFICA MARKS
+===================================== */
 
+#marks-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #050505;
+    perspective: 900px;
+    animation: introDisappear 0.8s ease 2.8s forwards;
+}
+
+#marks-intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle,
+        rgba(255, 91, 15, 0.2),
+        transparent 48%
+    );
+    animation: orangePulse 2.5s ease forwards;
+}
+
+.marks-intro-word {
+    position: relative;
+    color: #fff;
+    font-family: "Barlow Condensed", Impact, sans-serif;
+    font-size: clamp(90px, 20vw, 250px);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    white-space: nowrap;
+    text-shadow:
+        0 0 20px rgba(255, 90, 20, 0.4),
+        0 0 60px rgba(255, 80, 0, 0.2);
+    transform-style: preserve-3d;
+    animation: marksFlyIn 2.5s cubic-bezier(.15,.65,.25,1) forwards;
+}
+
+.marks-intro-word span {
+    color: #ff641c;
+}
+
+@keyframes marksFlyIn {
+    0% {
+        opacity: 0;
+        transform: translateZ(-1200px) scale(0.15) rotateX(12deg);
+        filter: blur(12px);
+    }
+
+    20% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    72% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateZ(1100px) scale(3.5);
+        filter: blur(12px);
+    }
+}
+
+@keyframes orangePulse {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes introDisappear {
+    to {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* A página aparece depois da abertura */
+body.intro-playing main,
+body.intro-playing header,
+body.intro-playing footer {
+    animation: contentAppear 0.9s ease 2.7s both;
+}
+
+@keyframes contentAppear {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #marks-intro,
+    .marks-intro-word,
+    body.intro-playing main,
+    body.intro-playing header,
+    body.intro-playing footer {
+        animation-duration: 0.01ms;
+        animation-delay: 0ms;
+    }
+}
     #servicos article {
         padding: 22px;
     }
