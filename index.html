@@ -1,458 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#080808">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Agência MARKS — informação e prevenção contra golpes financeiros.">
 
-    <meta
-        name="description"
-        content="Agência MARKS — informação, prevenção e orientação contra golpes financeiros."
-    >
+  <title>MARKS — Informação é proteção</title>
 
-    <title>MARKS — Informação é Proteção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- ABERTURA CINEMATOGRÁFICA -->
-    <div id="marks-intro" aria-label="Agência MARKS">
-        <div class="marks-intro-word">
-            M<span>A</span>RKS
-        </div>
-    </div>
+  <!-- ABERTURA: APENAS O NOME MARKS -->
+  <div id="intro" aria-label="MARKS">
+    <div class="intro-name">MARKS</div>
+  </div>
 
-    <!-- CABEÇALHO -->
+  <div class="site-shell">
+
+    <!-- MENU -->
     <header class="header">
-        <a href="#inicio" class="logo" aria-label="MARKS — início">
-            <span class="logo-small">AGÊNCIA</span>
-            M<span>A</span>RKS<b>.</b>
-        </a>
+      <a href="#inicio" class="wordmark">MARKS<span>.</span></a>
 
-        <nav class="navigation" aria-label="Navegação principal">
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#prevencao">Prevenção</a>
-            <a href="#contato" class="nav-contact">Contato ↗</a>
-        </nav>
+      <nav class="navigation" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#prevencao">Prevenção</a>
+        <a href="#contato" class="nav-cta">Contato ↗</a>
+      </nav>
     </header>
 
     <main>
 
-        <!-- 01: HERO -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
+      <!-- INÍCIO -->
+      <section id="inicio" class="hero page-section">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> INFORMAÇÃO É PROTEÇÃO</p>
 
-                <div class="eyebrow">
-                    <span class="status-dot"></span>
-                    AGÊNCIA MARKS / INFORMAÇÃO É PROTEÇÃO
-                </div>
+          <h1>
+            CONTRA GOLPES.<br>
+            <span>SEMPRE.</span>
+          </h1>
 
-                <h1>
-                    CONTRA GOLPES,<br>
-                    <span>SEMPRE.</span>
-                </h1>
+          <p class="hero-description">
+            Informação clara para reconhecer fraudes financeiras,
+            proteger seus dados e entender como agir diante de
+            uma possível tentativa de golpe.
+          </p>
 
-                <p class="hero-description">
-                    Informação, prevenção e orientação para quem enfrenta
-                    suspeitas de fraudes financeiras. Reconheça os sinais,
-                    proteja seus dados e descubra como buscar ajuda.
-                </p>
+          <div class="actions">
+            <a class="button button-primary" href="#sobre">CONHEÇA A MARKS <span>↗</span></a>
+            <a class="button button-outline" href="#prevencao">COMO SE PROTEGER</a>
+          </div>
 
-                <div class="hero-actions">
-                    <a href="#sobre" class="button button-primary">
-                        SAIBA MAIS <span>↗</span>
-                    </a>
+          <p class="hero-footnote">INFORMAÇÃO · PREVENÇÃO · RESPONSABILIDADE</p>
+        </div>
 
-                    <a href="#prevencao" class="button button-secondary">
-                        COMO SE PROTEGER
-                    </a>
-                </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-glow"></div>
+          <div class="art-grid"></div>
+          <div class="art-warning">!</div>
+          <div class="art-label">NÃO CONFIE SEM VERIFICAR.</div>
+          <div class="art-bottom">PROTEJA SEUS DADOS.</div>
+        </div>
 
-                <div class="hero-note">
-                    <span>01</span>
-                    PREVENÇÃO · INFORMAÇÃO · RESPONSABILIDADE
-                </div>
-            </div>
+        <button class="scroll-cue" type="button" data-next aria-label="Descer para a próxima seção">
+          <span>ROLE PARA DESCOBRIR</span>
+          <b>↓</b>
+        </button>
 
-            <div class="hero-visual" aria-hidden="true">
-                <div class="visual-glow"></div>
+        <span class="section-index">01 / 05</span>
+      </section>
 
-                <div class="visual-frame">
-                    <div class="frame-top">
-                        <span>MARKS / PROTEÇÃO DIGITAL</span>
-                        <span>2026</span>
-                    </div>
+      <!-- SOBRE -->
+      <section id="sobre" class="content-section page-section">
+        <div class="section-topline">
+          <span>01 — SOBRE A MARKS</span>
+          <span>NOSSA PROPOSTA</span>
+        </div>
 
-                    <div class="visual-word">
-                        <span class="word-outline">ALERTA</span>
-                        <span class="word-solid">ALERTA</span>
-                    </div>
+        <div class="two-column">
+          <div>
+            <p class="eyebrow">INFORMAÇÃO QUE FAZ DIFERENÇA</p>
+            <h2>MAIS CLAREZA.<br>MENOS <span>RISCOS.</span></h2>
+          </div>
 
-                    <div class="visual-symbol">!</div>
-
-                    <div class="visual-bottom">
-                        <span>RECONHEÇA OS SINAIS.</span>
-                        <span>PROTEJA-SE.</span>
-                    </div>
-                </div>
-
-                <div class="floating-tag tag-top">
-                    <span class="tag-icon">!</span>
-                    ATENÇÃO AOS GOLPES
-                </div>
-
-                <div class="floating-tag tag-bottom">
-                    <span class="tag-icon">✓</span>
-                    INFORMAÇÃO E PREVENÇÃO
-                </div>
-            </div>
-
-            <a href="#sobre" class="scroll-cue">
-                ROLE PARA DESCOBRIR
-                <span>↓</span>
-            </a>
-
-            <div class="hero-index">M / 001</div>
-        </section>
-
-        <!-- FAIXA DE IDENTIDADE -->
-        <section class="ticker" aria-label="Valores da Agência Marks">
-            <div class="ticker-content">
-                <span>INFORMAÇÃO</span><b>✳</b>
-                <span>PREVENÇÃO</span><b>✳</b>
-                <span>CONSCIENTIZAÇÃO</span><b>✳</b>
-                <span>PROTEÇÃO</span><b>✳</b>
-            </div>
-        </section>
-
-        <!-- 02: SOBRE -->
-        <section id="sobre" class="section about">
-            <div class="section-label">
-                <span>02 / SOBRE NÓS</span>
-                <span>AGÊNCIA MARKS</span>
-            </div>
-
-            <div class="about-grid">
-                <div>
-                    <p class="orange-label">NOSSA MISSÃO</p>
-
-                    <h2>
-                        MAIS INFORMAÇÃO.<br>
-                        MENOS <span>VÍTIMAS.</span>
-                    </h2>
-                </div>
-
-                <div class="about-copy">
-                    <p>
-                        Um golpe financeiro pode trazer prejuízo,
-                        insegurança e muitas dúvidas. Ter acesso à
-                        informação clara é um passo importante para
-                        reconhecer riscos e entender como agir.
-                    </p>
-
-                    <p>
-                        A Agência MARKS tem como proposta compartilhar
-                        conteúdo educativo sobre fraudes financeiras,
-                        prevenção digital e caminhos responsáveis
-                        para buscar orientação.
-                    </p>
-
-                    <div class="values">
-                        <div class="value">
-                            <span>01</span>
-                            <p>Informação responsável</p>
-                        </div>
-
-                        <div class="value">
-                            <span>02</span>
-                            <p>Prevenção digital</p>
-                        </div>
-
-                        <div class="value">
-                            <span>03</span>
-                            <p>Respeito à privacidade</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 03: SERVIÇOS -->
-        <section id="servicos" class="section services">
-            <div class="section-label">
-                <span>03 / COMO PODEMOS AJUDAR</span>
-                <span>INFORMAÇÃO NA PRÁTICA</span>
-            </div>
-
-            <div class="services-heading">
-                <h2>
-                    CONHEÇA OS RISCOS.<br>
-                    <span>PROTEJA-SE.</span>
-                </h2>
-
-                <p>
-                    Conteúdo educativo para identificar sinais de
-                    fraude e conhecer as opções disponíveis para
-                    agir com segurança.
-                </p>
-            </div>
-
-            <div class="service-grid">
-                <article class="service-card">
-                    <span class="service-number">01</span>
-                    <div class="service-icon" aria-hidden="true">↗</div>
-
-                    <h3>ORIENTAÇÃO INICIAL</h3>
-
-                    <p>
-                        Entenda quais providências considerar ao
-                        identificar uma transação suspeita ou
-                        desconfiar de um golpe.
-                    </p>
-
-                    <a href="#prevencao">SAIBA MAIS ↗</a>
-                </article>
-
-                <article class="service-card">
-                    <span class="service-number">02</span>
-                    <div class="service-icon" aria-hidden="true">⌕</div>
-
-                    <h3>IDENTIFICAÇÃO DE RISCOS</h3>
-
-                    <p>
-                        Aprenda a reconhecer falsas ofertas, mensagens
-                        suspeitas, perfis fraudulentos e promessas
-                        de lucro fácil.
-                    </p>
-
-                    <a href="#prevencao">SAIBA MAIS ↗</a>
-                </article>
-
-                <article class="service-card">
-                    <span class="service-number">03</span>
-                    <div class="service-icon" aria-hidden="true">◎</div>
-
-                    <h3>PREVENÇÃO DIGITAL</h3>
-
-                    <p>
-                        Conheça boas práticas para proteger suas contas,
-                        seus dispositivos e suas informações pessoais.
-                    </p>
-
-                    <a href="#prevencao">SAIBA MAIS ↗</a>
-                </article>
-            </div>
-        </section>
-
-        <!-- 04: PREVENÇÃO -->
-        <section id="prevencao" class="section prevention">
-            <div class="section-label">
-                <span>04 / PREVENÇÃO</span>
-                <span>SAIBA COMO AGIR</span>
-            </div>
-
-            <div class="prevention-grid">
-                <div class="prevention-heading">
-                    <p class="orange-label">NÃO IGNORE OS SINAIS</p>
-
-                    <h2>
-                        FIQUE ATENTO.<br>
-                        <span>EVITE GOLPES.</span>
-                    </h2>
-
-                    <p>
-                        Desconfie de urgência artificial, pedidos
-                        inesperados de dinheiro e promessas que
-                        parecem boas demais para ser verdade.
-                    </p>
-                </div>
-
-                <div class="steps">
-                    <article class="step">
-                        <span class="step-number">01</span>
-                        <div>
-                            <h3>DESCONFIE DE PROMESSAS</h3>
-                            <p>
-                                Analise ofertas com cuidado e verifique
-                                a identidade de quem está fazendo contato.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="step">
-                        <span class="step-number">02</span>
-                        <div>
-                            <h3>PROTEJA SEUS DADOS</h3>
-                            <p>
-                                Nunca compartilhe senhas, códigos de
-                                autenticação ou dados bancários com
-                                contatos não verificados.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="step">
-                        <span class="step-number">03</span>
-                        <div>
-                            <h3>VERIFIQUE OS CANAIS OFICIAIS</h3>
-                            <p>
-                                Confirme informações diretamente com
-                                bancos, empresas e instituições por
-                                meios oficiais.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="step">
-                        <span class="step-number">04</span>
-                        <div>
-                            <h3>GUARDE OS REGISTROS</h3>
-                            <p>
-                                Se suspeitar de fraude, preserve
-                                comprovantes e conversas e comunique
-                                a instituição financeira.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="step">
-                        <span class="step-number">05</span>
-                        <div>
-                            <h3>PROCURE AJUDA ADEQUADA</h3>
-                            <p>
-                                Considere registrar um boletim de
-                                ocorrência e buscar orientação junto
-                                às autoridades competentes.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- 05: CHAMADA FINAL -->
-        <section class="final-cta">
-            <div class="cta-mark" aria-hidden="true">M.</div>
-
-            <p class="orange-label">AGÊNCIA MARKS / INFORMAÇÃO É PROTEÇÃO</p>
-
-            <h2>
-                O PRIMEIRO PASSO<br>
-                É <span>BUSCAR INFORMAÇÃO.</span>
-            </h2>
-
+          <div class="body-copy">
             <p>
-                Reconhecer os riscos e conhecer os canais adequados
-                pode ajudar você a tomar decisões mais seguras.
+              Um golpe pode causar prejuízo financeiro e muitas dúvidas.
+              Entender os sinais de alerta ajuda a tomar decisões com
+              mais segurança.
             </p>
 
-            <a href="#contato" class="button button-primary">
-                FALE CONOSCO <span>↗</span>
+            <p>
+              A MARKS tem como proposta compartilhar conteúdo educativo
+              sobre fraudes, prevenção digital e caminhos responsáveis
+              para procurar ajuda.
+            </p>
+
+            <div class="value-list">
+              <div><span>01</span><p>Informação responsável</p></div>
+              <div><span>02</span><p>Prevenção digital</p></div>
+              <div><span>03</span><p>Respeito à privacidade</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos" class="content-section services page-section">
+        <div class="section-topline">
+          <span>02 — SERVIÇOS</span>
+          <span>CONTEÚDO EDUCATIVO</span>
+        </div>
+
+        <div class="services-heading">
+          <div>
+            <p class="eyebrow">CONHECER É SE PROTEGER</p>
+            <h2>ENTENDA OS RISCOS.<br><span>PROTEJA-SE.</span></h2>
+          </div>
+
+          <p class="body-copy">
+            Conteúdo para ajudar você a identificar sinais de fraude
+            e entender quais medidas considerar em cada situação.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-number">01</span>
+            <span class="card-symbol">↗</span>
+            <h3>ORIENTAÇÃO INICIAL</h3>
+            <p>
+              Conheça os primeiros passos ao perceber uma transação
+              suspeita ou desconfiar de um golpe.
+            </p>
+            <a href="#prevencao">SAIBA MAIS ↗</a>
+          </article>
+
+          <article class="service-card">
+            <span class="card-number">02</span>
+            <span class="card-symbol">⌕</span>
+            <h3>IDENTIFICAÇÃO DE RISCOS</h3>
+            <p>
+              Aprenda a reconhecer falsas ofertas, mensagens suspeitas
+              e promessas de lucro fácil.
+            </p>
+            <a href="#prevencao">SAIBA MAIS ↗</a>
+          </article>
+
+          <article class="service-card">
+            <span class="card-number">03</span>
+            <span class="card-symbol">◎</span>
+            <h3>PREVENÇÃO DIGITAL</h3>
+            <p>
+              Veja práticas úteis para proteger contas, dispositivos
+              e informações pessoais.
+            </p>
+            <a href="#prevencao">SAIBA MAIS ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- PREVENÇÃO -->
+      <section id="prevencao" class="content-section prevention page-section">
+        <div class="section-topline">
+          <span>03 — PREVENÇÃO</span>
+          <span>FIQUE ATENTO</span>
+        </div>
+
+        <div class="two-column prevention-layout">
+          <div>
+            <p class="eyebrow">PARE · VERIFIQUE · SÓ ENTÃO AJA</p>
+            <h2>DESCONFIE.<br><span>VERIFIQUE.</span><br>PROTEJA-SE.</h2>
+
+            <p class="body-copy">
+              Golpistas podem usar pressão, urgência e falsas promessas
+              para induzir decisões precipitadas. Pare e confirme
+              as informações antes de agir.
+            </p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <span>01</span>
+              <div>
+                <h3>DESCONFIE DE PROMESSAS FÁCEIS</h3>
+                <p>Verifique ofertas e identidades antes de transferir dinheiro.</p>
+              </div>
+            </article>
+
+            <article class="step">
+              <span>02</span>
+              <div>
+                <h3>PROTEJA SUAS INFORMAÇÕES</h3>
+                <p>Não compartilhe senhas nem códigos de autenticação.</p>
+              </div>
+            </article>
+
+            <article class="step">
+              <span>03</span>
+              <div>
+                <h3>USE CANAIS OFICIAIS</h3>
+                <p>Confirme mensagens diretamente com o banco ou a empresa.</p>
+              </div>
+            </article>
+
+            <article class="step">
+              <span>04</span>
+              <div>
+                <h3>GUARDE AS EVIDÊNCIAS</h3>
+                <p>Preserve conversas, comprovantes e registros de transações suspeitas.</p>
+              </div>
+            </article>
+
+            <article class="step">
+              <span>05</span>
+              <div>
+                <h3>PROCURE AJUDA ADEQUADA</h3>
+                <p>Considere contatar seu banco e as autoridades competentes.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAMADA FINAL -->
+      <section class="closing page-section">
+        <p class="eyebrow">MARKS — INFORMAÇÃO É PROTEÇÃO</p>
+        <h2>ANTES DE AGIR,<br><span>INFORME-SE.</span></h2>
+        <p>
+          Reconhecer os riscos é um passo importante para proteger
+          seu dinheiro, seus dados e sua tranquilidade.
+        </p>
+        <a class="button button-primary" href="#contato">FALE CONOSCO ↗</a>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="content-section contact page-section">
+        <div class="section-topline">
+          <span>04 — CONTATO</span>
+          <span>FALE CONOSCO</span>
+        </div>
+
+        <div class="two-column">
+          <div>
+            <p class="eyebrow">TEM ALGUMA DÚVIDA?</p>
+            <h2>VAMOS<br><span>CONVERSAR.</span></h2>
+          </div>
+
+          <div class="body-copy">
+            <p>
+              Entre em contato para dúvidas sobre o conteúdo educativo
+              e as informações de prevenção da MARKS.
+            </p>
+
+            <!-- Troque pelo endereço real antes de publicar -->
+            <a class="button button-primary" href="mailto:contato@seudominio.com">
+              ENVIAR E-MAIL ↗
             </a>
-        </section>
 
-        <!-- 06: CONTATO -->
-        <section id="contato" class="section contact">
-            <div class="section-label">
-                <span>06 / CONTATO</span>
-                <span>FALE COM A MARKS</span>
-            </div>
-
-            <div class="contact-grid">
-                <div>
-                    <h2>
-                        VAMOS<br>
-                        <span>CONVERSAR?</span>
-                    </h2>
-
-                    <p>
-                        Entre em contato para dúvidas sobre nosso
-                        conteúdo educativo e informações de prevenção.
-                    </p>
-                </div>
-
-                <div class="contact-panel">
-                    <span class="contact-overline">CANAL DE CONTATO</span>
-
-                    <h3>Estamos aqui para ouvir.</h3>
-
-                    <p>
-                        Atualize este espaço com seus canais oficiais
-                        antes de publicar o site.
-                    </p>
-
-                    <a
-                        class="button button-primary"
-                        href="mailto:contato@seudominio.com"
-                    >
-                        ENVIAR E-MAIL <span>↗</span>
-                    </a>
-
-                    <small>
-                        Substitua o endereço de exemplo por um e-mail real.
-                    </small>
-                </div>
-            </div>
-        </section>
+            <p class="small-note">
+              O e-mail acima é um exemplo e precisa ser atualizado.
+            </p>
+          </div>
+        </div>
+      </section>
 
     </main>
 
-    <!-- RODAPÉ -->
     <footer class="footer">
-        <a href="#inicio" class="logo">
-            <span class="logo-small">AGÊNCIA</span>
-            M<span>A</span>RKS<b>.</b>
-        </a>
+      <a href="#inicio" class="footer-name">MARKS<span>.</span></a>
+      <p>Informação, prevenção e conscientização contra fraudes.</p>
 
-        <p>Informação, prevenção e conscientização contra fraudes.</p>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> MARKS. Todos os direitos reservados.</span>
+        <a href="#inicio">VOLTAR AO TOPO ↑</a>
+      </div>
 
-        <div class="footer-bottom">
-            <span>© 2026 Agência MARKS. Todos os direitos reservados.</span>
-            <a href="#inicio">VOLTAR AO TOPO ↑</a>
-        </div>
-
-        <p class="legal-note">
-            Conteúdo educativo. Este site não substitui orientação jurídica,
-            serviços policiais ou atendimento de instituições financeiras.
-            Não garantimos recuperação de valores.
-        </p>
+      <p class="legal-note">
+        Conteúdo educativo. Este site não substitui orientação jurídica,
+        serviços policiais ou atendimento de instituições financeiras.
+        Não garantimos recuperação de valores.
+      </p>
     </footer>
 
-    <!-- SCRIPT PRINCIPAL -->
-    <script src="script.js"></script>
-
-    <!-- CONTROLE DA ABERTURA -->
-    <script>
-        (() => {
-            const intro = document.getElementById("marks-intro");
-            const reduceMotion = window.matchMedia(
-                "(prefers-reduced-motion: reduce)"
-            ).matches;
-
-            document.body.classList.add("intro-playing");
-
-            const duration = reduceMotion ? 100 : 3600;
-
-            window.setTimeout(() => {
-                if (intro) {
-                    intro.remove();
-                }
-
-                document.body.classList.remove("intro-playing");
-            }, duration);
-        })();
-    </script>
-
+  </div>
 </body>
 </html>
